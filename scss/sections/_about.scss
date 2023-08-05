@@ -1,0 +1,97 @@
+/* =============
+    about
+============= */
+#about{
+    padding: 50px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.jonah-image{
+    width: 100%;
+    border-radius: 15px;
+    padding: 40px 0;
+}
+
+.about-column-1{
+    flex-basis: 35%;
+}
+
+.about-column-2{
+    flex-basis: 60%;
+}
+
+.about-info{
+    font-size: 30px;
+    color: rgb(35, 203, 228);
+}
+
+.about-info2{
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-info3{
+    font-size: 14px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#interests{
+    padding: 30px 0;
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+.interests-list{
+    display: grid;
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: 300px;
+    grid-gap: 40px;
+}
+
+.grid-item{
+    background-color: #101028;
+}
+
+.sub-title{
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+}
+
+.intrest-title{
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.interests-list div{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.interests-list div i{
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.interests-list div a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
