@@ -380,12 +380,14 @@ nav {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: fixed;
+  top: 0;
 }
 
 /* =============
     Header
 ============= */
-#header {
+#background {
   width: 100%;
   height: 100vh;
   background-image: url(../images/background.png);
@@ -445,6 +447,14 @@ nav ul li a:hover::after {
   color: rgb(35, 203, 228);
 }
 
+.header2 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  background-attachment: fixed;
+}
+
 /* =============
     Footer
 ============= */
@@ -458,7 +468,7 @@ nav ul li a:hover::after {
     about
 ============= */
 #about {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .row {
@@ -559,6 +569,10 @@ nav ul li a:hover::after {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
+  -webkit-text-size-adjust: 200px;
+     -moz-text-size-adjust: 200px;
+      -ms-text-size-adjust: 200px;
+          text-size-adjust: 200px;
 }
 
 /* =============
@@ -602,4 +616,43 @@ nav ul li a:hover::after {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgb(35, 203, 228)));
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(35, 203, 228));
   display: block;
+}
+
+/* =============
+    associations
+============= */
+#associations {
+  color: white;
+  padding: 100px;
+  padding-top: 50px;
+}
+
+#associations h1 {
+  font-size: 50px;
+}
+
+.association {
+  padding-top: 20px;
+}
+
+/* =============
+    contact
+============= */
+#contact {
+  color: white;
+  padding: 200px;
+}
+
+/* =============
+    figma
+============= */
+.figma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 1000px;
 }
