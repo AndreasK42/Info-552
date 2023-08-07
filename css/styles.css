@@ -524,7 +524,7 @@ footer {
 ============= */
 #about {
   padding: 50px 0;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .jonah-image {
@@ -550,6 +550,10 @@ footer {
     padding: 50px 200px;
     gap: 25px;
   }
+}
+
+.about-column-1 {
+  padding-top: 30px;
 }
 
 .about-info2 {
