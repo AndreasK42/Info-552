@@ -16,6 +16,7 @@
     <script>
         function toggle() {
             var x = document.getElementById("list-of-items");
+            var y = document.getElementsByClassName("logo");
 
             if(x.style.display === "none") {
                 x.style.display = "block";
@@ -50,8 +51,8 @@
     </header>
 
 <div id="about">
-    <div class="container">
-        <div class="row">
+    <div id="container">
+        <div id="about-grid">
             <div class="about-column-1">
                 <img src="images/user.png" alt="an image of jonah koppel" class="jonah-image">
             </div>
@@ -63,9 +64,8 @@
                     I am working in partnership with Children’s National Hospital and Rutgers University. The overall goal of our project is to develop a computer-aided approach for detecting PPE (Personal Protective Equipment) nonadherence in a group medical setting.
 I received a BFA in Communication Arts from Virginia Commonwealth University. I graduated during the height of the pandemic, but was able to find employment doing data visualization, graphic design, and illustration. Over time I learned about ui/ux, and started taking online classes through the Interactive Design Foundation. I fell in love with ui/ux, and enrolled at Drexel for their HCI/UX master’s program.
                 </p>
-            </div>
-        </div>
     </div>
+</div>
 </div>
 <div id="interests">
     <div class="container">
