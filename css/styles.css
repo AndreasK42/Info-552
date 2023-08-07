@@ -539,6 +539,7 @@ footer {
 #about-grid {
   -ms-grid-columns: (1fr)[1];
   grid-template-columns: repeat(1, 1fr);
+  padding: 50px;
 }
 @media (min-width: 1280px) {
   #about-grid {
