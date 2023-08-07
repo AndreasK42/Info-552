@@ -630,6 +630,13 @@ footer {
 
 #projects a {
   font-size: 50px;
+  color: rgb(35, 203, 228);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#projects a:hover {
+  color: rgb(172, 46, 211);
 }
 
 #projects {

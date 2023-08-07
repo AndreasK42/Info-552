@@ -8,6 +8,12 @@
 
 #projects a{
     font-size: 50px;
+    color: rgb(35, 203, 228);
+    transition: 0.5s;
+}
+
+#projects a:hover{
+    color: rgb(172, 46, 211);
 }
 
 #projects{
