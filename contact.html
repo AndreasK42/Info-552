@@ -6,16 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/593818bc8f.js" crossorigin="anonymous"></script>
     <title>Starting Template</title>
 </head>
 
 <body>
     <script src="js/scripts-dist.js"></script>
-    <div id="header2">
-        <div class="container">
-            <nav>
+    <script>
+        function toggle() {
+            var x = document.getElementById("list-of-items");
+
+            if(x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else{
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <main class="content-grid"></main>
+    <header>
+        <section id="nav-container">
+
+            <section id="burger-container">
+                <button onclick="toggle()"4 id="burger-btn">
+                    <i class="fa-solid fa-bars"></i>MENU
+                </button>
+            </section>
+
+            <nav id="main-menu">
                 <img src="images/logo.png" alt="Jonah Koppel" class="logo">
-                <ul>
+                <ul id="list-of-items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
@@ -24,15 +45,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            </div>
-        </div>
+        </section>
+    </header>
         <div id="contact">
             <h2>contact me</h2>
             <div class="form">
                 <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Youur Email" required>
-                    <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="message" cols="30" placeholder="Your Message" rows="10"></textarea>
+                    <button type="submit" class="contact-button">submit</button>
                 </form>
                 </div>
             </div>

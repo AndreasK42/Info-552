@@ -5,3 +5,33 @@
     color: white;
     padding: 200px;
 }
+
+#contact h2{
+    text-align: center;
+    padding: 25px;
+    font-size: 50px;
+    color: rgb(35, 203, 228);
+    ;
+}
+
+form input, form textarea{
+    width: 100%;
+    gap: 20px;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 40px 15px;
+    margin: 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.contact-button{
+    background-color: #262626;
+    color: rgb(35, 203, 228);
+    ;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}

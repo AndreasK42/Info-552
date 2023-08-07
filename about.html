@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/593818bc8f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Starting Template</title>
 </head>
-<script src="https://kit.fontawesome.com/593818bc8f.js" crossorigin="anonymous"></script>
+
+
 <body>
     <script src="js/scripts-dist.js"></script>
-    <div id="header2">
-        <div class="container">
-            <nav>
+    <script>
+        function toggle() {
+            var x = document.getElementById("list-of-items");
+
+            if(x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else{
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <main class="content-grid"></main>
+    <header>
+        <section id="nav-container">
+
+            <section id="burger-container">
+                <button onclick="toggle()"4 id="burger-btn">
+                    <i class="fa-solid fa-bars"></i>MENU
+                </button>
+            </section>
+
+            <nav id="main-menu">
                 <img src="images/logo.png" alt="Jonah Koppel" class="logo">
-                <ul>
+                <ul id="list-of-items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
@@ -24,8 +46,8 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            </div>
-        </div>
+        </section>
+    </header>
 
 <div id="about">
     <div class="container">
@@ -52,14 +74,14 @@ I received a BFA in Communication Arts from Virginia Commonwealth University. I 
             <div class="grid-item">
                 <i class="fa-solid fa-landmark"></i>
                 <h2 class="intrest-title">history</h2>
-                <p class="about-info3">Lorem ipsum dolor sit amet. Qui saepe tempora qui molestiae cupiditate qui debitis praesentium in quia corporis. Ut provident cumque est beatae asperiores qui officia quia sit aspernatur ipsam ea consequatur dolores
+                <p class="about-info3">I enjoy reading and learning about history. I have especially focused of late on the bronze age and antiquity, but I also love looking at the 14th century onwards. I feel i have large gaps in my historical knowledge, but enjoy filling them in!
                 </p>
                 <a href="https://plato.stanford.edu/entries/epicurus/" target="_blank">secret link</a>
             </div>
             <div class="grid-item">
                 <i class="fa-solid fa-brush"></i>
                 <h2 class="intrest-title">Art</h2>
-                <p class="about-info3">Lorem ipsum dolor sit amet. Qui saepe tempora qui molestiae cupiditate qui debitis praesentium in quia corporis. Ut provident cumque est beatae asperiores qui officia quia sit aspernatur ipsam ea consequatur dolores
+                <p class="about-info3">I have always loved art, so much so that I got an undergraduate degree in Visual Communications. I enjoy drawing, painting, and learning about different historical art movments. I mainly make art digitally now, but bring out physical mediums every once and a while.
                 </p>
                 <a href="https://www.instagram.com/jonah_a_koppel/?hl=en" target="_blank">secret link</a>
             </div>
@@ -67,7 +89,7 @@ I received a BFA in Communication Arts from Virginia Commonwealth University. I 
                 <i class="fa-solid fa-chess-knight"></i>
                 <h2 class="intrest-title">games</h2>
                 <p class="about-info3">
-                    Lorem ipsum dolor sit amet. Qui saepe tempora qui molestiae cupiditate qui debitis praesentium in quia corporis. Ut provident cumque est beatae asperiores qui officia quia sit aspernatur ipsam ea consequatur dolores
+                    While I have much less time now to indulge, games were and still occasionally are one of the great ways i stay in touch with friends who live far away. I am somewhat competative and enjoy the opportunity to strategize especially with friends.
                 </p>
                 <a href="https://discoelysium.com/" target="_blank">secret link</a>
             </div>
@@ -75,7 +97,7 @@ I received a BFA in Communication Arts from Virginia Commonwealth University. I 
                 <i class="fa-solid fa-book-open-reader"></i>
                 <h2 class="intrest-title">reading</h2>
                 <p class="about-info3">
-                    Lorem ipsum dolor sit amet. Qui saepe tempora qui molestiae cupiditate qui debitis praesentium in quia corporis. Ut provident cumque est beatae asperiores qui officia quia sit aspernatur ipsam ea consequatur dolores
+                    While i have always loved reading, after graduating from college I found i had more time to choose the type of book I read. I especially love books that cover philosophical and historical topics. I'm usually in one to two books clubs depending on how much time i have.
                 </p>
                 <a href="https://www.gutenberg.org/files/600/600-h/600-h.htm" target="_blank">secret link</a>
             </div>

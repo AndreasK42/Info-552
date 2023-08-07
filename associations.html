@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/593818bc8f.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Starting Template</title>
 </head>
 
 <body>
     <script src="js/scripts-dist.js"></script>
-    <div id="header2">
-        <div class="container">
-            <nav>
+    <script>
+        function toggle() {
+            var x = document.getElementById("list-of-items");
+
+            if(x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else{
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <main class="content-grid"></main>
+    <header>
+        <section id="nav-container">
+
+            <section id="burger-container">
+                <button onclick="toggle()"4 id="burger-btn">
+                    <i class="fa-solid fa-bars"></i>MENU
+                </button>
+            </section>
+
+            <nav id="main-menu">
                 <img src="images/logo.png" alt="Jonah Koppel" class="logo">
-                <ul>
+                <ul id="list-of-items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
@@ -24,8 +45,9 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            </div>
-        </div>
+        </section>
+    </header>
+
         <div id="associations">
             <div class="employment">
                 <h1>Employment</h1>
@@ -36,13 +58,28 @@
                     tional Hospital to help design alerting and detection systems within Emergency Rooms. I have done so under Dr. Aleksandra Sarcevic</p>
                 </div>
                 <div class="association">
-                    <h2>Harvard Medical School, Department of Population Medicine (IS4H)</h2>
+                    <h2>Harvard Medical School, Department of Population Medicine</h2>
                 <p>I worked under Professor Stephen B. Soumerai, ScD, creating and editing visual representations of the
                     effects of the FDA advisories on medical outcomes.</p>
                 </div>
                 <div class="association">
-                    <h2>Information Science for Healthcare Lab (IS4H)</h2>
-                <p>details about this association</p>
+                    <h2>Social Research Corporation</h2>
+                <p>For a time i worked at the Social Research Corporation mainly as a research assistant, but I also worked doing data visualization and some graphic design. I processed and organized data, then created visual representations to convey ideas so that they could be understood quickly and accurately.</p>
+                </div>
+                <div class="association">
+                    <h2>University at Buffalo (SUNY), Department of Biomedical Informatics</h2>
+                    <p>I worked on proposal development, and representations of departmental outcomes. My work included writing, formatting, editing, photo editing and graphics creation.</p>
+                </div>
+            </div>
+            <div class="employment">
+                <h1>Education</h1>
+                <div class="association">
+                    <h2>Drexel University</h2>
+                <p>I am currently a master’s student at Drexel University in the college of computing and informatics. I am studying Human Computer Interaction and user experience design</p>
+                </div>
+                <div class="association">
+                    <h2>Virginia Commonwealth University</h2>
+                <p>I received a Bachelors in Fine Arts at VCU in Visual Communications. VCU is a public University that excells at art (it's the #1 ranked public college in fine arts). I chose it because it allowed me to recieve a high quality art degree while being 3-4 times cheeper than equivalent private Universities</p>
                 </div>
             </div>
         </div>

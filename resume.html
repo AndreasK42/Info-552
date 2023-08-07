@@ -6,16 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/593818bc8f.js" crossorigin="anonymous"></script>
     <title>Starting Template</title>
 </head>
 
 <body>
     <script src="js/scripts-dist.js"></script>
-    <div id="header2">
-        <div class="container">
-            <nav>
+    <script>
+        function toggle() {
+            var x = document.getElementById("list-of-items");
+
+            if(x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else{
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <main class="content-grid"></main>
+    <header>
+        <section id="nav-container">
+
+            <section id="burger-container">
+                <button onclick="toggle()"4 id="burger-btn">
+                    <i class="fa-solid fa-bars"></i>MENU
+                </button>
+            </section>
+
+            <nav id="main-menu">
                 <img src="images/logo.png" alt="Jonah Koppel" class="logo">
-                <ul>
+                <ul id="list-of-items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
@@ -24,8 +45,8 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </div>
-    </div>
+        </section>
+    </header>
     <object class="pdf-resume" data="images/indesign resume 7 (no adress).pdf" type="application/pdf" width="900px" height="1150px">
       <p>Unable to display PDF file. <a href="images/indesign resume 7.1.pdf">Download</a> instead.</p>
     </object>

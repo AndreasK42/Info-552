@@ -4,7 +4,12 @@
 #associations{
     color: white;
     padding: 100px;
-    padding-top: 50px;
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 #associations h1{
     font-size: 50px;

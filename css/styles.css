@@ -369,32 +369,57 @@ textarea {
     Navigation
 ============= */
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: fixed;
-  top: 0;
+  background-color: black;
+}
+
+/* =============
+copypasta
+============= */
+.bold-link {
+  font-weight: 600;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.show-menu {
+  display: block !important;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    background-color: black;
+  }
+}
+nav ul li {
+  padding: 0 0 10px 10px;
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  nav ul li {
+    padding: 0;
+  }
+}
+nav ul li a:link, nav ul li a:visited {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 /* =============
     Header
 ============= */
-#background {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../images/background.png);
-  background-size: cover;
-  background-position: center;
-}
-
 .container {
   padding: 10px 10%;
 }
@@ -421,7 +446,7 @@ nav ul li a::after {
   width: 0;
   height: 3px;
   background: rgb(35, 203, 228);
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: -6px;
   -webkit-transition: 0.5s;
@@ -432,27 +457,55 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.header-text {
-  color: white;
-  margin-top: 20%;
-  font-size: 20px;
-}
-
-.header-text h1 {
-  font-size: 60px;
-  margin-top: 20px;
-}
-
-.header-text h1 span {
-  color: rgb(35, 203, 228);
-}
-
 .header2 {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: black;
-  background-attachment: fixed;
+}
+
+#nav-container {
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* =============
+    copypasta
+============= */
+header {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "burger" "nav";
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  header #burger-container {
+    display: none;
+  }
+}
+header #burger-container button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+header #burger-container button i {
+  padding-right: 8px;
 }
 
 /* =============
@@ -468,7 +521,8 @@ nav ul li a:hover::after {
     about
 ============= */
 #about {
-  padding: 100px 0;
+  padding: 50px 0;
+  padding-top: 150px;
 }
 
 .row {
@@ -581,14 +635,23 @@ nav ul li a:hover::after {
 .pdf-resume {
   margin: auto;
   display: block;
+  padding-top: 160px;
 }
 
 /* =============
     projects
 ============= */
 #projects {
-  padding: 50px 0;
+  padding: 150px 0;
   color: white;
+}
+
+#projects a {
+  font-size: 50px;
+}
+
+#projects {
+  text-align: center;
 }
 
 .project-list {
@@ -616,6 +679,39 @@ nav ul li a:hover::after {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgb(35, 203, 228)));
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(35, 203, 228));
   display: block;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.content {
+  color: white;
+  padding: 200px 100px;
+  padding-top: 100px;
+}
+
+content-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  grid-auto-rows: 100%;
+  grid-gap: 40px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.images {
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 100%;
+  grid-gap: 40px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 /* =============
@@ -624,7 +720,13 @@ nav ul li a:hover::after {
 #associations {
   color: white;
   padding: 100px;
-  padding-top: 50px;
+  padding-top: 150px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #associations h1 {
@@ -643,6 +745,34 @@ nav ul li a:hover::after {
   padding: 200px;
 }
 
+#contact h2 {
+  text-align: center;
+  padding: 25px;
+  font-size: 50px;
+  color: rgb(35, 203, 228);
+}
+
+form input, form textarea {
+  width: 100%;
+  gap: 20px;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 40px 15px;
+  margin: 20px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.contact-button {
+  background-color: #262626;
+  color: rgb(35, 203, 228);
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
 /* =============
     figma
 ============= */
@@ -653,6 +783,36 @@ nav ul li a:hover::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: auto;
+}
+
+.iframe-container {
+  height: 80vw;
+  width: 90vw;
+}
+
+/* =============
+    index
+============= */
+#background {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.index-text {
+  color: white;
+  margin-top: 20%;
+  font-size: 20px;
+}
+
+.index-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.index-text h1 span {
+  color: rgb(35, 203, 228);
 }

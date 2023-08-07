@@ -1,0 +1,24 @@
+/* =============
+    index
+============= */
+#background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.index-text{
+    color: white;
+    margin-top: 20%;
+    font-size: 20px;
+}
+
+.index-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.index-text h1 span{
+    color: rgb(35, 203, 228);
+}

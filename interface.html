@@ -6,18 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <title>Starting Template</title>
     <script src="https://kit.fontawesome.com/593818bc8f.js" crossorigin="anonymous"></script>
-
+    <title>Starting Template</title>
 </head>
 
 <body>
     <script src="js/scripts-dist.js"></script>
-    <div id="header2">
-        <div class="container">
-            <nav>
+    <script>
+        function toggle() {
+            var x = document.getElementById("list-of-items");
+
+            if(x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else{
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <main class="content-grid"></main>
+    <header>
+        <section id="nav-container">
+
+            <section id="burger-container">
+                <button onclick="toggle()"4 id="burger-btn">
+                    <i class="fa-solid fa-bars"></i>MENU
+                </button>
+            </section>
+
+            <nav id="main-menu">
                 <img src="images/logo.png" alt="Jonah Koppel" class="logo">
-                <ul>
+                <ul id="list-of-items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
@@ -26,12 +45,60 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            </div>
-        </div>
+        </section>
+    </header>
 
         <div class="figma">
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1440" height="1024" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F58uYco4zNVhvpXvkJ7gEHc%2FUntitled%3Ftype%3Ddesign%26node-id%3D1-2%26t%3DGNNfjYbghGyIFsPX-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A39%26mode%3Ddesign" allowfullscreen></iframe>
+            <div class="iframe-container">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F58uYco4zNVhvpXvkJ7gEHc%2FUntitled%3Ftype%3Ddesign%26node-id%3D1-2%26t%3DGNNfjYbghGyIFsPX-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A39%26mode%3Ddesign" allowfullscreen></iframe>
+            </div>
         </div>
+        
 </body>
+<div class="content">
+<h3>Jonah Koppel, Aditya Manepally</h3>
+
+<h1>Research through design (note this project is in progress)</h1>
+Our aim is to research and design synchronously to create prototypes. We will test these prototypes and their impacts, to derive valuable takeaways. Following a testing period, we will dive back into literature before creating another design. In this way our research and design will cyclically support each other.
+
+<h3>The problem:</h3>
+<p>
+    Targeted advertising has become a prevalent issue, raising concerns about the privacy of digitally present users. Companies are striving to build detailed personas on individuals, collecting vast amounts of personal data to tailor advertisements and maximize their effectiveness. Some of this data includes our browsing habits, online purchases, location information, and even what you enjoy eating for dinner. Per Tristan Harris, founder of the Center for Humane Technology, “companies now know more about your kids than you do”. While personalized ads can be useful, the invasion of privacy and potential for misuse is alarming. For this reason, we chose a topic that encompasses a solution for this problem, in replacing targeted advertisements. The crux is that instead of companies building a digital persona of you, you build this persona yourself, and allow ads to be targeted to this persona rather than track your every move. The user is able to choose categories of advertisements they want to see, as well as build an idealized persona of themselves, allowing the targeted advertisements to curb them towards being this person. 
+</p>
+
+<p>
+    In our opinion, this is an area that is subtly omnipotent in every digital user’s life whether they’re aware of it or not. Although this problem hasn’t entirely come to public light, the amount of information being collected on users as “Big Data” is largely concerning. We think the idea of selling yourself ads has the potential to revolutionize the advertising industry for merchants, and protect the privacy and livelihoods of consumers. 
+</p>
+
+<p>
+    The methodology of Research through Design, we feel will help us a lot. Being able to understand the problem, tackle it, test it, and then reevaluate the problem greatly helps our ability to reevaluate and revise problems and ensure nothing is overlooked in the process.
+</p>
+
+<h2>
+    Project Description
+</h2>
+<p>
+    While we are still in the early stages of ideation our project is aimed towards providing users control over the ads and content they see. Aim 1. Would be to allow the user to create a persona of themselves they would like to move towards being.  Aim 2. Would be to replace targeted ads with nudges that nudge the user towards a version of themselves they would prefer being. Aim 3. Would be replacing ads targeted towards one’s-self to instead target a persona of themselves they would rather be. Ads will instead be targeted at the idealized self rather than the real self, hopefully changing the ad target’s behavioral patterns over time. Aim 4. Would be changing the suggested media/content a user receives to instead target their persona rather than themselves.
+</p>
+<p>
+    The Congressional Research Service released a report in 2009 by Suzanne M. Kirchhoff called: Advertising Industry in the Digital Age, wherein it states that the US advertising industry accounts for about 2% of the nation’s output, and that digital advertising had doubled between 2005 and 2009 (this is despite the fall in advertising during the 2008 financial crisis). Companies would not spend so much money unless advertising had real world effects. Why not provide users with the tools to take control over the way in which they are manipulated? We aim to allow users to manipulate themselves by replacing or changing the advertising they are exposed with to advertising they would like to see. This could be real advertising that pushes them towards an interest, or synthetic advertising which exists only to nudge the user towards a desired goal.
+</p>
+<p>
+    We are interested in this project because we see it as the next step in privacy and digital self actualization. The focus amongst those who are passionate about the manner in which their digital use manipulates them is often on mitigation. While this is a valuable and worthwhile tool, it could be even more valuable to manipulate oneself towards their desires using the same systems and tactics that often manipulate us for ill.
+</p>
+
+<h3>
+    We think this project will be beneficial towards our professional aspirations because: 
+</h3>
+<p>
+    it is a topic that involves both research and design
+We will be able to iterate through cyclical stages of design and research which will allow more room for development than in a traditional two step research then design system.
+This is a topic where we feel we have a unique approach despite how large and well known the problem area is.
+</p>
+
+<p>
+    We anticipate that our challenges will be most present during actual implementation. Both of us have a background in tech and coding, but it is not our forte. Luckily we both have a large pool of people who are able to provide guidance when it comes to backend implementation.
+</p>
+</div>
 
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/593818bc8f.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Starting Template</title>
 </head>
@@ -12,11 +13,31 @@
 <body>
     <script src="js/scripts-dist.js"></script>
 
-    <div class="header2">
-        <div class="container">
-            <nav>
+    <script>
+        function toggle() {
+            var x = document.getElementById("list-of-items");
+
+            if(x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else{
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <main class="content-grid"></main>
+    <header>
+        <section id="nav-container">
+
+            <section id="burger-container">
+                <button onclick="toggle()"4 id="burger-btn">
+                    <i class="fa-solid fa-bars"></i>MENU
+                </button>
+            </section>
+
+            <nav id="main-menu">
                 <img src="images/logo.png" alt="Jonah Koppel" class="logo">
-                <ul>
+                <ul id="list-of-items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
@@ -25,16 +46,17 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            </div>
-        </div>
-</body>
+        </section>
+    </header>
+
     <div id="background">
         <div class="container">
-            <div class="header-text">
+            <div class="index-text">
                 <h1>Hi, i'm a <span>UX/UI</span><br> professional with <br> backgrounds in both <br> medical device research<br>and illustration</h1>
                 <p>Master's student in UX/UI</p>
             </div>
             </div>
         </div>
+</body>
 
 </html>

@@ -2,10 +2,45 @@
     Navigation
 ============= */
 nav{
+
+    //display: none;
+    background-color: black;
+}
+/* =============
+copypasta
+============= */
+
+.bold-link {
+  font-weight: 600;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.show-menu {
+  display: block !important;
+}
+@media (min-width: 1024px) {
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
+    position: relative;
+    background-color: black;
+  }
+}
+
+nav ul li {
+  padding: 0 0 10px 10px;
+  text-align: left;
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    padding: 0;
+  }
+}
+nav ul li a:link, nav ul li a:visited {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
