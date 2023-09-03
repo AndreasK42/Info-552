@@ -19,7 +19,10 @@ iframe {
 .chat-container{
         width: 30%;
         height: 100vh;
-        border: 1px solid black;
         margin: 10px;
         overflow-y: scroll;
+}
+
+body{
+    overflow: hidden;
 }

@@ -351,9 +351,12 @@ iframe {
 .chat-container {
   width: 30%;
   height: 100vh;
-  border: 1px solid black;
   margin: 10px;
   overflow-y: scroll;
+}
+
+body {
+  overflow: hidden;
 }
 
 /* =============
@@ -403,6 +406,7 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 .chatContent {
@@ -438,15 +442,15 @@ textarea {
 }
 
 .chatRobot {
-  background-color: rgb(120, 158, 218);
+  background-color: rgb(174, 197, 235);
 }
 
 .chatHuman {
-  background-color: rgb(183, 192, 211);
+  background-color: rgb(215, 219, 228);
 }
 
 .chatTemp {
-  background-color: rgb(159, 169, 192);
+  background-color: rgb(215, 219, 228);
   width: 100%;
   height: 90px;
 }
@@ -471,6 +475,34 @@ textarea {
   background: black;
   -webkit-animation: animateDots 1.5s ease-in-out infinite;
           animation: animateDots 1.5s ease-in-out infinite;
+}
+
+.typingContainer {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 11px;
+  width: 29.5%;
+}
+
+#chatInput {
+  width: 100%;
+}
+
+.typingTextarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background: rgb(159, 169, 192);
+}
+
+#enterButton {
+  background-color: rgb(39, 43, 92);
+  color: white;
+  border: none;
+  text-align: center;
+  padding: 15px 32px;
+  font-size: 16px;
 }
 
 @-webkit-keyframes animateDots {
