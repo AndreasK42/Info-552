@@ -4,7 +4,7 @@ const chatContainer = document.querySelector(".chat-container");
 const wikiFrame = document.getElementById("wikiFrame");
 
 let userText = null;
-const API_KEY = "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";  
+const API_KEY = "https://your-site-name.netlify.app/.netlify/functions/proxy";  
 let messages = [];
 
 const createElement = (html, className) => {
