@@ -4,7 +4,7 @@ const chatContainer = document.querySelector(".chat-container");
 const wikiFrame = document.getElementById("wikiFrame");
 
 let userText = null;
-const API_KEY = "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";  
+const API_KEY = "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";  
 let messages = [];
 
 const createElement = (html, className) => {
@@ -36,7 +36,6 @@ const getChatResponse = async (incomingChatDiv) => {
         });
     } 
     else if (userText.toLowerCase().includes("validator")) {
-        scrollIframe(-100);  
         responseText = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fwikipediahelper.netlify.app%2F";
     } 
     else if (userText.toLowerCase().includes("scroll up")) {
