@@ -1,3 +1,7 @@
+#howdy{
+    text-align: center;
+}
+
 .icon{
     width: 50px;
     height: 80px;
@@ -36,13 +40,17 @@
     background-color: rgb(215, 219, 228);
 }
 
+.chatHuman .chatDetails{
+    float: right;
+}
+
 .chatTemp{
     background-color: rgb(215, 219, 228);
     width: 100%;
     height: 90px;
 }
 
-.chatTemp .chatDetails{
+.chatDetails .{
     float: right;
 }
 
