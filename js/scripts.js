@@ -4,7 +4,7 @@ const chatContainer = document.querySelector(".chat-container");
 const wikiFrame = document.getElementById("wikiFrame");
 
 let userText = null;
-const API_KEY = "YOUR_API_KEY";  
+const API_KEY = "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";  
 let messages = [];
 
 const createElement = (html, className) => {
@@ -29,22 +29,27 @@ const getChatResponse = async (incomingChatDiv) => {
     if (userText.toLowerCase().startsWith("go to")) {
         const topic = userText.slice(6).trim();
         navigateToWikiPage(topic);
-        responseText = `Navigating to ${topic}...`;
+        responseText = `Navigating to the wikipedia article about ${topic}...`;
         messages.push({
             role: 'user',
             content: responseText
         });
-    } else if (userText.toLowerCase().includes("scroll up")) {
+    } 
+    else if (userText.toLowerCase().includes("scroll up")) {
         scrollIframe(-100);  
         responseText = "Scrolling up... (but not actually, because apperently there is a security limitation that browsers enforce to prevent potentially malicious actions from being taken on iframes from different origins, so i would need access to wikipedia's source code, or to host it myself. I'm sure there are other ways to do it though, and i'll keep looking. But, this would work for sites i own.)";
-    } else if (userText.toLowerCase().includes("scroll down")) {
+    } 
+    else if (userText.toLowerCase().includes("scroll down")) {
         scrollIframe(100);   
         responseText = "Scrolling down... (but not actually, because apperently there is a security limitation that browsers enforce to prevent potentially malicious actions from being taken on iframes from different origins, so i would need access to wikipedia's source code, or to host it myself. I'm sure there are other ways to do it though, and i'll keep looking. But, this would work for sites i own.)";
-    } else {
-        messages.push({
+    } 
+    else {
+        messages.push(
+          {
             role: 'user',
             content: userText
-        });
+        }
+        );
     }
 
     const API_URL = "https://api.openai.com/v1/chat/completions";
