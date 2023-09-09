@@ -113,8 +113,8 @@ const handleOutgoingChat = () => {
   }
   const html = `<div class="chatContents">
                   <div class="chatDetails">
+                  <img class="icon" src="publicdomainguy.jpeg" alt="image of user avatar (a black and white image of a person holding an instrument)">
                     <p>${userText}</p>
-                    <img class="icon" src="publicdomainguy.jpeg" alt="image of user avatar (a black and white image of a person holding an instrument)">
                   </div>
                 </div>`;
   const outgoingChatDiv = createElement(html, "chatHuman");
