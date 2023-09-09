@@ -1,6 +1,8 @@
 let fetch;
 
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
+    console.log("EVENT:", event);
+    console.log("CONTEXT:", context);
   if (!fetch) {
     fetch = (await import('node-fetch')).default;
   }
