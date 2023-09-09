@@ -1,6 +1,10 @@
-const fetch = require('node-fetch');
+let fetch;
 
 exports.handler = async function(event, context) {
+  if (!fetch) {
+    fetch = (await import('node-fetch')).default;
+  }
+
   const API_URL = "https://api.openai.com/v1/chat/completions";
   const API_KEY = process.env.OPENAI_API_KEY;
 
