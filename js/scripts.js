@@ -4,7 +4,7 @@ const chatContainer = document.querySelector(".chat-container");
 const wikiFrame = document.getElementById("wikiFrame");
 
 let userText = null;
-const API_KEY = process.env.OPENAI_API_KEY;;  
+const API_KEY = "process.env.OPENAI_API_KEY";
 let messages = [];
 
 const createElement = (html, className) => {
