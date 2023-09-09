@@ -4,7 +4,7 @@ const chatContainer = document.querySelector(".chat-container");
 const wikiFrame = document.getElementById("wikiFrame");
 
 let userText = null;
-const API_KEY = "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";  
+const API_KEY = "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";  
 let messages = [];
 
 const createElement = (html, className) => {
