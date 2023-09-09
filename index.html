@@ -6,30 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <title>Wikipedia helper</title>
+    <script src="js\scripts.js" defer></script>
 </head>
 
 <body>
 <div class="container">
     <div class="iframe-container">
-        <iframe src="https://en.wikipedia.org/wiki/Main_Page" title="Wikipedia"></iframe>
+        <iframe src="https://en.wikipedia.org/wiki/Main_Page" id="wikiFrame" title="Wikipedia"></iframe>
     </div>
     <div class="chat-container">
-        <div class="chatRobot">
+
+
+       <div class="chatRobot">
             <div class="chatContents">
                 <div class="chatDetails">
                     <img class="icon" src="ofkuy1b9.bmp" alt="wikipedia logo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sapiente explicabo minus necessitatibus, dolore recusandae quam eaque incidunt officiis impedit doloribus doloremque fugiat nesciunt nam at veritatis magni? Nesciunt, sunt.</p>
+                    <div>
+                        <h3>howdy</h3>
+                    <p>
+                        to go somewhere within Wikipedia type "go to [the article you want to go to]" <br> example: go to frogs
+                    </p>
+                </div>
                 </div>
             </div>
         </div>
+
+<!----
         <div class="chatHuman">
             <div class="chatContents">
                 <div class="chatDetails">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sapiente explicabo minus necessitatibus, dolore recusandae quam eaque incidunt officiis impedit doloribus doloremque fugiat nesciunt nam at veritatis magni? Nesciunt, sunt.</p>
-                    <img class="icon" src="publicdomainguy.jpeg" alt="image of user avatat (a black and white image of a person holding an instrument)">
+                    <p>Lorem ipsum dolor sitsunt.</p>
+                    <img class="icon" class="human" src="publicdomainguy.jpeg" alt="image of user avatat (a black and white image of a person holding an instrument)">
                 </div>
-                </div>
+            </div>
         </div>
+
         <div class="chatTemp">
             <div class="chatContents">
                 <div class="chatDetails">
@@ -43,11 +54,12 @@
             </div>
         </div>
 
-        <!---     input box      --->
+--->
+
         <div class="typingContainer">
             <div class="typingContent">
                 <div class="typingTextarea">
-                    <textarea id="chatInput" area-placeholder="enter prompt here"></textarea>
+                    <textarea id="chatInput" placeholder="speak or type text here"></textarea>
                     <button type="button" id="enterButton">enter</button> 
                 </div>
             </div>
@@ -55,7 +67,6 @@
     </div>
 </div>
 
-    <script src="js\scripts.js"></script>
 </body>
 
 </html>
