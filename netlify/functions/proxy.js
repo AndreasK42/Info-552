@@ -12,8 +12,7 @@ exports.handler = async function(event, context) {
     const req = https.request(API_URL, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${API_KEY}`
+        'Content-Type': 'application/json'
       }
     }, res => {
       let data = '';
