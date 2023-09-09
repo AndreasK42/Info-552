@@ -55,14 +55,13 @@ const getChatResponse = async (incomingChatDiv) => {
         );
     }
 
-    const API_URL = ""/.netlify/functions/proxy";
+    const API_URL = "/.netlify/functions/proxy";
     const pElement = document.createElement("p");
 
     const requestOptions = {
         method: "POST",
         headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${API_KEY}`
+            "Content-Type": "application/json"
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
@@ -124,6 +123,7 @@ const handleOutgoingChat = () => {
   chatContainer.appendChild(outgoingChatDiv);
 
   setTimeout(showTypingAnimation, 500);
+  chatInput.value = "";
 }
 
 sendButton.addEventListener("click", handleOutgoingChat);

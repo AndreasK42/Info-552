@@ -12,8 +12,10 @@ exports.handler = async function(event, context) {
     const req = https.request(API_URL, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
-      }
+        'Content-Type': 'application/json',  // Corrected this line by adding comma
+        'Authorization': `Bearer ${API_KEY}`
+      },
+      timeout: 10000  // 10 seconds timeout
     }, res => {
       let data = '';
 
@@ -33,6 +35,14 @@ exports.handler = async function(event, context) {
       resolve({
         statusCode: 500,
         body: JSON.stringify({error: error.message})
+      });
+    });
+
+    req.on('timeout', () => {  // Handling timeout
+      req.destroy();
+      resolve({
+        statusCode: 500,
+        body: JSON.stringify({error: "Request timed out"})
       });
     });
 
