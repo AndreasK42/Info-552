@@ -1,6 +1,6 @@
 const https = require('https');
 
-export async function handler(event, context) {
+exports.handler = async function(event, context) {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
